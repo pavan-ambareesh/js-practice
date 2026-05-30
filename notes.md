@@ -54,7 +54,7 @@ Day 3
     A config object had headless: "false" as a string instead of boolean false. The code ran fine but the string "false" is truthy in JavaScript, so headless mode never actually turned off. No error, wrong behaviour — a silent bug.
 
     | Value | Type | Truthy/Falsy|
-    |---------|-------------|
+    |---------|-------------|----------|
     | false | boolean | Falsy|
     |"false"| string | Truthy|
     |0|number|Falsy|
