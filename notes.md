@@ -33,3 +33,22 @@ filter vs find
 = and === in filter
     = is assignment — it sets a value.
     === is strict equality check — it compares both value AND type and returns true or false.
+
+Day 3
+    Summary :
+    - Object destructuring uses {} — pull by key name, order doesn't matter
+    - Array destructuring uses [] — pull by position, order matters
+        In destructuring, you can set a default value using =. The default is only used when the property doesn't exist in the object or is undefined. If the property exists, the actual value is used regardless of the default.
+        In array destructuring, you can skip items by leaving empty commas. Each comma represents one skipped position.
+    - Spread operator copies object properties into a new object
+    - const protects variable binding, not contents — mutation is allowed
+         const protects the variable binding — meaning you cannot make the variable point to a new value. But the contents inside the object can still be changed freely. This is called mutation. So const prevents reassignment, not mutation.
+    - Booleans and numbers never use quotes — "false" ≠ false
+    - Object.keys / Object.values / Object.entries
+            Object.keys(obj) — returns array of all key names
+            Object.values(obj) — returns array of all values
+            Object.entries(obj) — returns array of [key, value] pairs — each index holds both together
+    - JSON.parse() → text to object | JSON.stringify() → object to text
+
+    Bugs Encountered - 
+    A config object had headless: "false" as a string instead of boolean false. The code ran fine but the string "false" is truthy in JavaScript, so headless mode never actually turned off. No error, wrong behaviour — a silent bug.
