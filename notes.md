@@ -60,3 +60,13 @@ Day 3
     |0|number|Falsy|
     |"0"|string|Falsy|
     |""|empty string|Falsy|
+
+    Day 4
+    JS is single threaded — handles async via Event Loop
+    setTimeout minimum wait, not guaranteed — runs when Call Stack is empty
+    Promise 3 states: pending, resolved, rejected
+    resolve() → .then() / try block
+    reject() → .catch() / catch block
+    async marks the function, await pauses at that line
+    Without await → get Promise {pending} not the actual value
+    Without await → try/catch breaks → UnhandledPromiseRejection crash
