@@ -5,7 +5,7 @@
 console.log("1. Test started");
 setTimeout(() => {
     console.log("2. Login Page Loaded");
-} , );
+},2000);
 
 console.log("3. Moving to next step");
 
@@ -24,12 +24,12 @@ function fetchTestData(testId) {
     });
 }
 
-// fetchTestData("TC001").then((result) =>{
-//     console.log("Success :", result);
-// })
-// .catch(error => {
-//     console.log("Error :", error);
-// });
+fetchTestData("TC001").then((result) =>{
+    console.log("Success :", result);
+})
+.catch(error => {
+    console.log("Error :", error);
+});
 
 console.log("This Line runs before the promise is resoved or rejected");
 
