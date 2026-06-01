@@ -61,7 +61,7 @@ Day 3
     |"0"|string|Falsy|
     |""|empty string|Falsy|
 
-    Day 4
+Day 4_Part 1
     JS is single threaded — handles async via Event Loop
     setTimeout minimum wait, not guaranteed — runs when Call Stack is empty
     Promise 3 states: pending, resolved, rejected
@@ -70,3 +70,16 @@ Day 3
     async marks the function, await pauses at that line
     Without await → get Promise {pending} not the actual value
     Without await → try/catch breaks → UnhandledPromiseRejection crash
+
+Day - 4_Part 2
+    What is async
+        async will mark the function as asyncronous, which means it will always returns a Promise automatically. Async will return promise.
+        async without await is an syntax error, so async allows await to be used inside it.
+    What is await 
+        await pauses execution at that particular line until the promsie resolves or rejects. The lines below await wont run until the results come back.
+        without await the below lines will run immediately with a pending promise instead of actual value
+    what happens if we dont use await
+        Without await, you get Promise { <pending> } — the Promise is still running in the background, but your code doesn't wait for it. If it rejects, there's nothing to catch it → UnhandledPromiseRejection crash.
+    JS Event Loop: Call Stack → Web APIs → Callback Queue
+    forEach ignores await — use for...of for sequential async
+    try/catch per test = one failure doesn't stop the suite
