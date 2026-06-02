@@ -83,3 +83,10 @@ Day - 4_Part 2
     JS Event Loop: Call Stack → Web APIs → Callback Queue
     forEach ignores await — use for...of for sequential async
     try/catch per test = one failure doesn't stop the suite
+
+Day 5
+    ## Template Literals
+- Use backticks instead of quotes
+- Embed variables with ${}
+- Cleaner than string concatenation with +
+- Example: `Hello ${name}, you are ${age} years old`
