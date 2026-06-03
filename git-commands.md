@@ -14,3 +14,9 @@
 | git push | Send to GitHub |
 | git status | Show current state |
 | git log --oneline | Show commit history |
+
+## to check the diff
+    git diff HEAD~1 HEAD
+
+## To get streak count
+    git log --oneline | wc -l
