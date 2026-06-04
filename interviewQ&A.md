@@ -51,4 +51,8 @@
     async does exactly two things:
     Marks a function as asynchronous — allowing await to be used inside it
     Makes the function automatically return a Promise — even if you just return a plain value
+## What is this inside a class method? What does it refer to?
+    this inside a class method refers to the current instance of the class. 
+## What does super() do? What happens if you remove it?
+    super() calls the parent constructor. Must be called before this in a child class. Forgetting it throws ReferenceError.
     

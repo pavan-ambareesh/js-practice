@@ -98,3 +98,14 @@
 - SCREAMING_SNAKE_CASE → for constants that never change
 - "type":"module" in package.json → enables import/export in Node.js
 - require() → CommonJS (old) | import → ES Modules (modern)
+
+## Day 6 — Classes and OOP
+    - Class is a blueprint, object is an instance
+    - constructor sets initial data, runs automatically on new
+    - this refers to the current instance
+    - extends — child inherits parent methods
+    - super() — calls parent constructor, must come before this
+    - Method overriding — child replaces parent method
+    - super.method() — calls parent version from child
+    - Encapsulation — selectors stay inside class, hidden from tests
+    - Instance isolation — each object has independent data
